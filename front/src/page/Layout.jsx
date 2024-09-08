@@ -23,9 +23,13 @@ const Layout = () => {
             <ul className="flex p-2 gap-2">
               {arr.map((x) => {
                 return (
-                  <li><Link
+                  <li>
+                    <Link
                       className="p-2 items-center justify-center flex"
-                      to={`/?category=${x.text}`}>{x.text}</Link>
+                      to={`/?category=${x.text}`}
+                    >
+                      {x.text}
+                    </Link>{" "}
                   </li>
                 );
               })}
