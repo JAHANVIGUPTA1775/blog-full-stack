@@ -33,7 +33,7 @@ app.get("/blogsbyid/:id", async (req, res) => {
     `SELECT * FROM blogs where id= ${req.params.id}`
 
   );
-  console.log(result);
+  // console.log(result);
   res.json({ msg: result.rows });
 });
 

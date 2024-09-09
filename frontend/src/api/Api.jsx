@@ -10,7 +10,7 @@ export const getBlogs = (cat) => {
   return axios
     .get(apiURL + "/blogs/" + cat)
     .then((result) => {
-      return result.data;
+      return result.data; 
     })
     .catch((error) => {
       return error;

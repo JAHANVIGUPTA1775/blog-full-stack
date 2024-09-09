@@ -37,9 +37,9 @@ const CreateBlog = () => {
     { text: "Technology", path: "/" },
   ];
   return (
-    <>
-      <div className=" w-full items-center justify-center">
-        <div className=" bg-slate-200 w-[60%] p-5 rounded-xl">
+    <div className=" justify-center">
+      <div className=" justify-center items-center ">
+        <div className=" bg-slate-200 w-[50%] h-[50%] ml-[26%] p-5 rounded-xl justify-center items-center ">
           <h1 className=" text-2xl mx-auto">Create Blog Post</h1>
           <div className="flex flex-col">
             {/* <small>{JSON.stringify(newblog)}</small> */}
@@ -68,13 +68,13 @@ const CreateBlog = () => {
               
               className=" bg-white rounded mt-2 mb-2"
             />
-            <button onClick={()=> handleSubmit()} className=" bg-slate-500 text-white w-[100px] rounded-sm">
+            <button onClick={()=> handleSubmit()} className=" bg-blue-600  text-white w-[100px] h-[30px] rounded">
               submit
             </button>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

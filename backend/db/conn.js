@@ -9,6 +9,7 @@ const client = new Client({
 
 async function check(){
     await client.connect()
+    
     // const res = await client.query('SELECT * FROM blogs');
     // console.log(res.rows[0]) 
     // await client.end()
